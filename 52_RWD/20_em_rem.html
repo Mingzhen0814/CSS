@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>em and rem</title>
+    <style>
+        #div1 {
+            font-size: 3em;
+        }
+
+        #div1child {
+            font-size: 1em;
+            /*根據父元素大小調整尺寸倍率*/
+        }
+
+        #div2 {
+            font-size: 3rem;
+        }
+
+        #div2child {
+            font-size: 1rem;
+            /*根據根元素(html)大小調整尺寸倍率*/
+            /* html的字型大小為16px(預設) */
+        }
+    </style>
+
+</head>
+
+<body>
+    <h4>比較 em 和 rem 的差異</h4>
+
+    <p>apple-1</p><!-- 預設字體大小16px -->
+    <p style="font-size: 16px;">apple-2</p>
+    <!-- 10. 測試 #div1 調整字型為 3em ； 
+                 #div1child 調整字型為 1em -->
+    <div id="div1">
+        dog
+        <div id="div1child">dog-1</div>
+    </div>
+    <hr>
+
+    <!-- 20. 測試 #div2 調整字型為 3rem ； 
+                 #div2child 調整字型為 1rem -->
+    <div id="div2">
+        dog-2
+        <div id="div2child">dog-3</div>
+    </div>
+
+</body>
+
+</html>

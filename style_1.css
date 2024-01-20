@@ -1,0 +1,5 @@
+@import "./style_2.css"; /* 路徑以style_1.css為起點 */
+
+h1 {
+    background-color: lightblue;
+}

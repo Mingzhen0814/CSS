@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <style>
+        /* 10. div 設定 'Comic Sans MS' 字型 */
+        /* 11. div 設定 color: blue; */
+        /* 12. div 設定 border: 2px solid orange; */
+        div {
+            font-family: "Comic Sans MS";
+            color: blue;
+            border: 2px solid orange;
+            /* border只有父元素<div>具備此樣式，子元素<p>無法繼承 */
+        }
+
+
+        /* 20. p 設定 border: inherit; */
+        /* 21. p 設定 color: initial; */
+        /* 22. p 設定 Arial 字型  */
+        p {
+            border: inherit;
+            /* 讓子元素<p>能繼承到父元素<div>的border */
+            color: initial;
+            /* 不讓子元素<p>繼承到父元素<div>的color，使其恢復原有的值 */
+            font-family: "Arial"; /* 字型名稱無空白鍵，可以不打"" */
+        }
+    </style>
+</head>
+
+<body>
+    ABCDEFGHIJKLMNOPQRSTUVWXYZ
+    <div>
+        ABCDEFGHIJKLMNOPQRSTUVWXYZ
+        <p>ABCDEFGHIJKLMNOPQRSTUVWXYZ</p><!-- 子元素<p>繼承到父元素<div>的格式 -->
+    </div>
+</body>
+
+</html>

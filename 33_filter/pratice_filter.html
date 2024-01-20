@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pratice</title>
+    <style>
+        img {
+            width: 200px;
+        }
+
+        #blur:checked~img {
+            filter: blur(5px);
+        }
+
+        #brightness:checked~img {
+            filter: brightness(200%);
+        }
+
+        #contrast:checked~img {
+            filter: contrast(200%);
+        }
+    </style>
+</head>
+
+<body>
+    <input type="radio" name="filter" id="blur"><label for="blur">blur</label>
+    <input type="radio" name="filter" id="brightness"><label for="brightness">brightness</label>
+    <input type="radio" name="filter" id="contrast"><label for="contrast">contrast</label>
+    <img src="./sunny.jpg">
+
+</body>
+
+</html>

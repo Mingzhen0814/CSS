@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <style>
+        /* exmaple 01. */
+        #div_A {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            animation-name: example;
+            animation-duration: 5s;
+            /* 動畫播放一次的時間 */
+            /* 一定要有animation-name與animation-duration */
+        }
+
+        @keyframes example {
+
+            /* @keyframes定義動畫 exampl自定義動畫名稱 */
+            from {
+                background-color: blue;
+            }
+
+            to {
+                background-color: yellow;
+            }
+        }
+
+        /* example 02. */
+        #div_B {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            animation-name: change-color;
+            animation-duration: 5s;
+            /* animation-iteration-count: 2; */
+            animation-iteration-count: infinite;/* 播放動畫的次數 */
+        }
+
+        /* red -> blue -> yellow -> green -> red */
+        @keyframes change-color {
+            0% {
+                background-color: red;
+            }
+
+            25% {
+                background-color: blue;
+            }
+
+            50% {
+                background-color: yellow;
+            }
+
+            75% {
+                background-color: green;
+            }
+
+            100% {
+                background-color: red;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="div_A"></div>
+    <div id="div_B"></div>
+</body>
+
+</html>
