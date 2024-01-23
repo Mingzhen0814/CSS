@@ -6,22 +6,23 @@
     <title>val()</title>
 
     <style>
-        /* 10. 在 html 中設定 --apple: green;  
-            觀察畫面的變化*/
+        /* 10. 在 html 中設定 --apple: green;  觀察畫面的變化*/
         html {
+            /* 在html的範圍中宣告變數，樣式範圍:整份html */
             --apple: green;
+            /* --變數 */
         }
 
-        /* :root {
+        :root {
+            /* :root也是選html元素 */
             --apple: green;
-        } */
+            /* --變數 */
+        }
 
         /* 20. 取得在 html 中設定的變數值 */
-        /*    選擇 h5 標籤 設定 color: var(--apple); 
-              觀察畫面的變化 */
+        /*    選擇 h5 標籤 設定 color: var(--apple); 觀察畫面的變化 */
         h5 {
             color: var(--apple);
-            /* color: green; */
         }
 
         h4 {
@@ -29,11 +30,10 @@
             color: var(--bee);
         }
 
-        /* 實驗結果，沒有效果 */
-        h6 {
-            color: var(--bee);
-        }
-
+        /* h6 { */
+            /* color: var(--bee); */
+            /* h6不在h4的範圍中，因此無作用 */
+        /* } */
     </style>
 </head>
 
