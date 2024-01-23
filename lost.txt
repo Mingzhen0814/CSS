@@ -1,4 +1,2 @@
 
-30_box_model10_width_height.html
-30_box_model20_padding_margin.html
 ?/style_1.css
